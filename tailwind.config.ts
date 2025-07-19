@@ -61,7 +61,38 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// ITAsociety Brand Colors
+				'ita-green': {
+					DEFAULT: 'hsl(var(--ita-green))',
+					light: 'hsl(var(--ita-green-light))',
+					dark: 'hsl(var(--ita-green-dark))'
+				},
+				'ita-red': {
+					DEFAULT: 'hsl(var(--ita-red))',
+					light: 'hsl(var(--ita-red-light))',
+					dark: 'hsl(var(--ita-red-dark))'
+				},
+				// Technology Colors
+				'cyber-blue': 'hsl(var(--cyber-blue))',
+				'neural-purple': 'hsl(var(--neural-purple))',
+				'quantum-teal': 'hsl(var(--quantum-teal))',
+				'holographic': 'hsl(var(--holographic))'
+			},
+			backgroundImage: {
+				'gradient-neural': 'var(--gradient-neural)',
+				'gradient-quantum': 'var(--gradient-quantum)',
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-card': 'var(--gradient-card)'
+			},
+			boxShadow: {
+				'neural': 'var(--shadow-neural)',
+				'quantum': 'var(--shadow-quantum)',
+				'glow': 'var(--shadow-glow)'
+			},
+			transitionTimingFunction: {
+				'neural': 'cubic-bezier(0.4, 0, 0.2, 1)',
+				'quantum': 'cubic-bezier(0.16, 1, 0.3, 1)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +115,43 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'neural-pulse': {
+					'0%, 100%': { 
+						opacity: '1',
+						transform: 'scale(1)'
+					},
+					'50%': { 
+						opacity: '0.8',
+						transform: 'scale(1.05)'
+					}
+				},
+				'quantum-float': {
+					'0%, 100%': { 
+						transform: 'translateY(0px) rotate(0deg)' 
+					},
+					'50%': { 
+						transform: 'translateY(-10px) rotate(3deg)' 
+					}
+				},
+				'holographic-shift': {
+					'0%': { 
+						background: 'linear-gradient(45deg, hsl(var(--cyber-blue)), hsl(var(--neural-purple)))' 
+					},
+					'50%': { 
+						background: 'linear-gradient(45deg, hsl(var(--ita-green)), hsl(var(--quantum-teal)))' 
+					},
+					'100%': { 
+						background: 'linear-gradient(45deg, hsl(var(--cyber-blue)), hsl(var(--neural-purple)))' 
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'neural-pulse': 'neural-pulse 3s ease-in-out infinite',
+				'quantum-float': 'quantum-float 6s ease-in-out infinite',
+				'holographic-shift': 'holographic-shift 8s ease-in-out infinite'
 			}
 		}
 	},
