@@ -19,19 +19,19 @@ import {
 const aiDevelopmentServices = [
   {
     title: "AI Wizard",
-    description: "Crea siti web dinamici e personalizzati in pochi istanti utilizzando la nostra intelligenza artificiale avanzata",
+    description: "Create dynamic, personalized websites in moments using our advanced artificial intelligence",
     icon: Zap,
     color: "from-ita-green to-quantum-teal"
   },
   {
     title: "Agent Nexus",
-    description: "Accedi a una rete di agenti AI autonomi per automatizzare task complesse e ottimizzare i processi aziendali",
+    description: "Access a network of autonomous AI agents to automate complex tasks and optimize business processes",
     icon: Network,
     color: "from-cyber-blue to-neural-purple"
   },
   {
     title: "Prompt Virtuoso Automator",
-    description: "Genera e ottimizza prompt per modelli linguistici, massimizzando l'efficacia delle tue interazioni",
+    description: "Generate and optimize prompts for language models, maximizing the effectiveness of your interactions",
     icon: Brain,
     color: "from-neural-purple to-ita-red"
   }
@@ -40,19 +40,19 @@ const aiDevelopmentServices = [
 const securityServices = [
   {
     title: "Sentinel Cyber Nexus AI",
-    description: "Soluzioni di cybersecurity potenziate dall'AI per la protezione proattiva delle tue infrastrutture digitali",
+    description: "AI-powered cybersecurity solutions for proactive protection of your digital infrastructure",
     icon: Shield,
     color: "from-ita-red to-ita-red-light"
   },
   {
     title: "PenTest AI Portal",
-    description: "Simula attacchi informatici per identificare e correggere le vulnerabilità dei tuoi sistemi prima che vengano sfruttate",
+    description: "Simulate cyberattacks to identify and fix vulnerabilities in your systems before they can be exploited",
     icon: Target,
     color: "from-quantum-teal to-cyber-blue"
   },
   {
     title: "MedTrack Analyzer",
-    description: "Piattaforma avanzata per l'analisi di dati medici, supportando la ricerca e la diagnostica con insight basati sull'AI",
+    description: "Advanced platform for analyzing medical data, supporting research and diagnostics with AI-driven insights",
     icon: Heart,
     color: "from-ita-green-light to-neural-purple"
   }
@@ -61,25 +61,25 @@ const securityServices = [
 const businessServices = [
   {
     title: "Business Nexus",
-    description: "Un ecosistema di strumenti intelligenti per la gestione, l'analisi e la crescita del tuo business",
+    description: "An ecosystem of intelligent tools, AI agents, and automations to manage, analyze, and grow your business.",
     icon: BarChart3,
     color: "from-cyber-blue to-ita-green"
   },
   {
     title: "Smart Delivery Routes",
-    description: "Ottimizza i percorsi di consegna con algoritmi intelligenti per ridurre costi, tempi ed emissioni",
+    description: "Optimize delivery routes with intelligent algorithms to reduce costs, times and emissions",
     icon: Route,
     color: "from-ita-red to-quantum-teal"
   },
   {
     title: "SomaSynth",
-    description: "Il tuo medico e psicoterapeuta AI che mantiene in memoria le conversazioni per rispondere in modo completo ai sintomi",
+    description: "Your AI doctor and psychotherapist that remembers conversations to respond comprehensively to symptoms",
     icon: Heart,
     color: "from-neural-purple to-ita-green-light"
   },
   {
     title: "Discord Ultimate Bot",
-    description: "Potenzia il tuo server con pulsanti interattivi e funzionalità avanzate per migliorare l'engagement",
+    description: "Enhance your server with interactive buttons and advanced features to boost engagement",
     icon: MessageSquare,
     color: "from-ita-green to-cyber-blue"
   }
@@ -88,13 +88,13 @@ const businessServices = [
 const innovationServices = [
   {
     title: "Dream Recorder",
-    description: "Progetto dell'MIT portato alla luce: macchina rivoluzionaria per visualizzare e raccogliere dati sulle attività cerebrali durante le fasi oniriche",
+    description: "MIT project brought to light: revolutionary machine to visualize and collect data on brain activity during dreaming phases",
     icon: Eye,
     color: "from-neural-purple to-cyber-blue"
   },
   {
     title: "Holo Revolution",
-    description: "Ricerca sulle modalità più avanzate delle proiezioni olografiche per il futuro dell'interazione digitale",
+    description: "Research on the most advanced holographic projection methods for the future of digital interaction",
     icon: Layers,
     color: "from-ita-green to-ita-red"
   }
@@ -144,29 +144,29 @@ export const Services = () => {
     <div className="bg-background">
       <ServiceSection
         id="ai-development"
-        title="Sviluppo e Piattaforme AI"
-        description="Soluzioni AI all'avanguardia per trasformare il modo in cui lavori e innovi"
+        title="AI Development & Automation"
+        description="Cutting-edge AI solutions to transform the way you work and innovate"
         services={aiDevelopmentServices}
       />
       
       <ServiceSection
         id="security"
-        title="Sicurezza e Analisi Dati"
-        description="Protezione avanzata e insights intelligenti per il tuo ecosistema digitale"
+        title="Security & Data Analysis"
+        description="Advanced protection and intelligent insights for your digital ecosystem"
         services={securityServices}
       />
       
       <ServiceSection
         id="business"
-        title="Soluzioni Business e Utility"
-        description="Strumenti intelligenti per ottimizzare ogni aspetto del tuo business"
+        title="Business Solutions & Utilities"
+        description="An ecosystem of intelligent tools, AI agents, and automations to manage, analyze, and grow your business."
         services={businessServices}
       />
       
       <ServiceSection
         id="innovations"
-        title="Innovazioni Rivoluzionarie"
-        description="Ricerche all'avanguardia che definiscono il futuro della tecnologia"
+        title="Revolutionary Innovations"
+        description="Cutting-edge research defining the future of technology"
         services={innovationServices}
       />
 
@@ -177,18 +177,18 @@ export const Services = () => {
             <Rocket className="w-10 h-10 text-foreground" />
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
-            Richiedi una Soluzione AI Personalizzata
+            Request a Custom AI Solution
           </h2>
           <p className="text-xl text-foreground/80 mb-8 max-w-2xl mx-auto">
-            Hai esigenze specifiche? Il nostro team di esperti AI sviluppa soluzioni su misura 
-            per le tue sfide aziendali uniche.
+            Do you have specific needs? Our team of AI experts develops tailored solutions
+            for your unique business challenges.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
             <Button variant="hero" size="xl">
-              Richiedi Consulenza Gratuita
+              Request a Free Consultation
             </Button>
             <Button variant="enterprise" size="xl">
-              Esplora Case Studies
+              Explore Case Studies
             </Button>
           </div>
         </div>

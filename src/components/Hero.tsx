@@ -20,26 +20,26 @@ export const Hero = () => {
           {/* Main Heading */}
           <div className="space-y-4">
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
-              Rivoluziona il tuo Business
+              Revolutionize your Business
               <br />
               <span className="bg-gradient-to-r from-ita-green to-quantum-teal bg-clip-text text-transparent">
-                con l'AI Avanzata
+                with Advanced AI
               </span>
             </h1>
             <p className="text-xl sm:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              ITAsociety trasforma i processi aziendali attraverso un ecosistema tecnologico 
-              all'avanguardia, combinando intelligenza artificiale, sicurezza avanzata e innovazione continua.
+              ITAsociety transforms business processes through a cutting-edge technological ecosystem,
+              combining artificial intelligence, advanced security, and continuous innovation.
             </p>
           </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
             <Button variant="hero" size="xl" className="group">
-              Esplora l'Ecosistema
+              Explore the Ecosystem
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
             </Button>
             <Button variant="enterprise" size="xl">
-              Richiedi Consulenza
+              Request Consultation
             </Button>
           </div>
 
@@ -50,21 +50,21 @@ export const Hero = () => {
                 <Cpu className="w-8 h-8 text-foreground" />
               </div>
               <div className="text-3xl font-bold text-foreground">12+</div>
-              <div className="text-muted-foreground">Soluzioni AI</div>
+              <div className="text-muted-foreground">AI Solutions</div>
             </div>
             <div className="flex flex-col items-center space-y-2">
               <div className="flex items-center justify-center w-16 h-16 bg-gradient-quantum rounded-full">
                 <Network className="w-8 h-8 text-foreground" />
               </div>
               <div className="text-3xl font-bold text-foreground">500+</div>
-              <div className="text-muted-foreground">Aziende Partner</div>
+              <div className="text-muted-foreground">Partner Companies</div>
             </div>
             <div className="flex flex-col items-center space-y-2">
               <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-ita-red to-ita-red-light rounded-full">
                 <Sparkles className="w-8 h-8 text-foreground" />
               </div>
               <div className="text-3xl font-bold text-foreground">99.9%</div>
-              <div className="text-muted-foreground">Uptime Garantito</div>
+              <div className="text-muted-foreground">Uptime Guaranteed</div>
             </div>
           </div>
         </div>

@@ -21,23 +21,23 @@ const quickLinks = [
 ];
 
 const solutions = [
-  { name: "Sviluppo AI", href: "#ai-development", icon: Brain },
-  { name: "Sicurezza", href: "#security", icon: Shield },
+  { name: "AI Development", href: "#ai-development", icon: Brain },
+  { name: "Security", href: "#security", icon: Shield },
   { name: "Business Solutions", href: "#business", icon: Zap },
-  { name: "Innovazioni", href: "#innovations", icon: Rocket },
+  { name: "Innovations", href: "#innovations", icon: Rocket },
 ];
 
 const company = [
-  { name: "Chi Siamo", href: "#about" },
-  { name: "La Nostra Missione", href: "#mission" },
-  { name: "Il Team", href: "#team" },
-  { name: "Carriere", href: "#careers" },
+  { name: "About", href: "#about" },
+  { name: "Our Mission", href: "#mission" },
+  { name: "The Team", href: "#team" },
+  { name: "Careers", href: "#careers" },
   { name: "Partners", href: "#partners" },
 ];
 
 const legal = [
   { name: "Privacy Policy", href: "#privacy" },
-  { name: "Termini di Servizio", href: "#terms" },
+  { name: "Terms of Service", href: "#terms" },
   { name: "Cookie Policy", href: "#cookies" },
   { name: "GDPR Compliance", href: "#gdpr" },
 ];
@@ -50,19 +50,19 @@ export const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center">
             <h3 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
-              Resta Aggiornato sulle Innovazioni AI
+              Stay Up to Date on AI Innovations
             </h3>
             <p className="text-lg text-foreground/80 mb-8 max-w-2xl mx-auto">
-              Ricevi insights esclusivi, case studies e le ultime novità dal mondo dell'AI enterprise.
+              Receive exclusive insights, case studies, and the latest news from the world of enterprise AI.
             </p>
             <div className="flex flex-col sm:flex-row max-w-md mx-auto space-y-4 sm:space-y-0 sm:space-x-4">
               <input
                 type="email"
-                placeholder="La tua email professionale"
+                placeholder="Your Professional Email"
                 className="flex-1 px-4 py-3 bg-background/20 backdrop-blur-sm border border-border/50 rounded-md text-foreground placeholder-foreground/60 focus:outline-none focus:ring-2 focus:ring-primary"
               />
               <Button variant="hero" className="group">
-                Iscriviti
+                Subscribe
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
               </Button>
             </div>
@@ -83,24 +83,24 @@ export const Footer = () => {
               />
             </div>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              ITAsociety trasforma il futuro delle aziende attraverso soluzioni AI all'avanguardia. 
-              Il nostro ecosistema tecnologico integrato ottimizza processi, migliora la sicurezza 
-              e accelera l'innovazione.
+              ITAsociety transforms the future of businesses through cutting-edge AI solutions.
+              Our integrated technology ecosystem optimizes processes, improves security,
+              and accelerates innovation.
             </p>
             
             {/* Contact Info */}
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-muted-foreground">
                 <Mail className="w-4 h-4 text-primary" />
-                <span>hello@itasociety.ai</span>
+                <span>itasocietyofficial@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3 text-muted-foreground">
                 <Phone className="w-4 h-4 text-primary" />
-                <span>+39 02 8888 9999</span>
+                <span>+39 320 574 2205</span>
               </div>
               <div className="flex items-center space-x-3 text-muted-foreground">
                 <MapPin className="w-4 h-4 text-primary" />
-                <span>Milano, Via Innovation 42</span>
+                <span>Nichelino, Via Innovation 42</span>
               </div>
             </div>
 
@@ -192,12 +192,12 @@ export const Footer = () => {
         <div className="border-t border-border mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-muted-foreground text-sm">
-              © 2024 ITAsociety. Tutti i diritti riservati. | Powered by Advanced AI Technology
+              © 2025 ITAsociety. All rights reserved. | Powered by Advanced AI Technology
             </div>
             <div className="flex items-center space-x-6 text-sm text-muted-foreground">
               <span className="flex items-center space-x-1">
                 <div className="w-2 h-2 bg-ita-green rounded-full animate-pulse"></div>
-                <span>Sistemi Operativi</span>
+                <span>Operating Systems</span>
               </span>
               <span className="flex items-center space-x-1">
                 <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>

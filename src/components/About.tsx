@@ -15,28 +15,28 @@ import {
 
 const teamMembers = [
   {
-    name: "Dr. Alessandro Rossi",
-    role: "CEO & AI Visionary",
-    description: "20+ anni in ricerca AI e trasformazione digitale. Ex-direttore MIT AI Lab.",
+    name: "Dr. Alberto Gravagno",
+    role: "CEO & CTO",
+    description: "5+ anni in ricerca VR, AI e innovazione digitale. Psicologo Clinico e Digitale, ipnotista e Psicoterapeuta Sistemico in formazione",
     icon: Brain,
     gradient: "from-ita-green to-quantum-teal"
   },
   {
-    name: "Dr. Maria Santini",
-    role: "CTO & Chief Architect", 
+    name: "Dr. Lorenzo Prete",
+    role: "Co-Founder, Chief Architect & Business Executive",
     description: "Architetto software enterprise con expertise in sistemi distribuiti e cloud computing.",
     icon: Rocket,
     gradient: "from-cyber-blue to-neural-purple"
   },
   {
-    name: "Ing. Marco Ferrari",
+    name: "Dr. Andrea Pirrera",
     role: "Head of Security",
     description: "Esperto in cybersecurity e protezione dati. Consulente per Fortune 500.",
     icon: Shield,
     gradient: "from-ita-red to-ita-red-light"
   },
   {
-    name: "Dr. Elena Bianchi",
+    name: "Dr. Igor Paoli",
     role: "Innovation Director",
     description: "Pioniera in ricerca olografica e neuroscienze computazionali.",
     icon: Lightbulb,
@@ -47,23 +47,23 @@ const teamMembers = [
 const values = [
   {
     icon: Target,
-    title: "Precisione",
-    description: "Ogni soluzione è progettata con accuratezza millimetrica per massimizzare l'impatto aziendale."
+    title: "Precision",
+    description: "Every solution is designed with millimetric accuracy to maximize business impact."
   },
   {
     icon: Lightbulb,
-    title: "Innovazione",
-    description: "Spingiamo costantemente i confini della tecnologia per creare il futuro oggi."
+    title: "Innovation",
+    description: "We constantly push the boundaries of technology to create the future today."
   },
   {
     icon: Users,
-    title: "Collaborazione",
-    description: "Lavoriamo come partner strategici, non solo fornitori di tecnologia."
+    title: "Collaboration",
+    description: "We work as strategic partners, not just technology providers."
   },
   {
     icon: Globe,
-    title: "Impatto Globale",
-    description: "Le nostre soluzioni sono progettate per scalare e trasformare industrie intere."
+    title: "Global Impact",
+    description: "Our solutions are designed to scale and transform entire industries."
   }
 ];
 
@@ -71,26 +71,26 @@ const achievements = [
   {
     icon: Award,
     metric: "15+",
-    label: "Brevetti Tecnologici",
-    description: "Innovazioni riconosciute a livello internazionale"
+    label: "Tech Patents",
+    description: "Internationally recognized innovations"
   },
   {
     icon: TrendingUp,
     metric: "400%",
-    label: "ROI Medio Clienti",
-    description: "Incremento performance aziendali documentato"
+    label: "Average Client ROI",
+    description: "Documented increase in business performance"
   },
   {
     icon: Globe,
     metric: "25+",
-    label: "Paesi Serviti",
-    description: "Presenza globale con expertise locale"
+    label: "Countries Served",
+    description: "Global presence with local expertise"
   },
   {
     icon: Zap,
     metric: "99.9%",
     label: "Uptime SLA",
-    description: "Affidabilità enterprise garantita"
+    description: "Enterprise-grade reliability guaranteed"
   }
 ];
 
@@ -102,15 +102,15 @@ export const About = () => {
         <div className="text-center mb-20">
           <div className="inline-flex items-center space-x-2 bg-primary/20 backdrop-blur-sm rounded-full px-6 py-2 border border-primary/30 mb-8">
             <Users className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-primary">Le Menti della Rivoluzione</span>
+            <span className="text-sm font-medium text-primary">The Minds of the Revolution</span>
           </div>
           <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">
-            Chi Siamo
+            About Us
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            ITAsociety nasce dall'unione di menti visionarie che hanno dedicato la vita a trasformare 
-            l'impossibile in realtà. Siamo pionieri nell'integrazione dell'intelligenza artificiale 
-            nei processi aziendali, con l'obiettivo di democratizzare l'innovazione tecnologica.
+            ITAsociety was born from the union of visionary minds who have dedicated their lives to transforming
+            the impossible into reality. We are pioneers in integrating artificial intelligence
+            into business processes, with the aim of democratizing technological innovation.
           </p>
         </div>
 
@@ -121,18 +121,18 @@ export const About = () => {
               <Target className="w-10 h-10 text-foreground" />
             </div>
             <h3 className="text-2xl sm:text-3xl font-bold text-foreground mb-6">
-              La Nostra Missione
+              Our Mission
             </h3>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8">
-              Rendere l'intelligenza artificiale accessibile, sicura e trasformativa per ogni azienda. 
-              Crediamo che l'AI non debba sostituire l'intelligenza umana, ma amplificarla, 
-              creando un ecosistema dove tecnologia e creatività umana si fondono per generare valore senza precedenti.
+              To make artificial intelligence accessible, safe, and transformative for every business.
+              We believe that AI should not replace human intelligence but amplify it,
+              creating an ecosystem where technology and human creativity merge to generate unprecedented value.
             </p>
             <blockquote className="text-xl font-medium text-foreground italic">
-              "Non stiamo solo costruendo tecnologie. Stiamo plasmando il futuro del lavoro umano."
+              "We are not just building technologies. We are shaping the future of human work."
             </blockquote>
             <cite className="text-sm text-muted-foreground mt-2 block">
-              — Dr. Alessandro Rossi, CEO ITAsociety
+              — Dr. Alberto Gravagno, CEO ITAsociety
             </cite>
           </div>
         </div>
@@ -140,7 +140,7 @@ export const About = () => {
         {/* Team Members */}
         <div className="mb-20">
           <h3 className="text-3xl font-bold text-foreground text-center mb-12">
-            Il Nostro Team Esecutivo
+            Our Executive Team
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {teamMembers.map((member, index) => (
@@ -165,7 +165,7 @@ export const About = () => {
         {/* Values */}
         <div className="mb-20">
           <h3 className="text-3xl font-bold text-foreground text-center mb-12">
-            I Nostri Valori
+            Our Values
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
@@ -185,7 +185,7 @@ export const About = () => {
         {/* Achievements */}
         <div className="mb-20">
           <h3 className="text-3xl font-bold text-foreground text-center mb-12">
-            I Nostri Risultati
+            Our Results
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {achievements.map((achievement, index) => (
@@ -209,18 +209,18 @@ export const About = () => {
             <Rocket className="w-10 h-10 text-foreground" />
           </div>
           <h3 className="text-2xl sm:text-3xl font-bold text-foreground mb-6">
-            Unisciti alla Rivoluzione Digitale
+            Join the Digital Revolution
           </h3>
           <p className="text-lg text-foreground/80 max-w-2xl mx-auto mb-8">
-            Siamo sempre alla ricerca di talenti eccezionali che condividono la nostra passione 
-            per l'innovazione e vogliono contribuire a plasmare il futuro dell'AI enterprise.
+            We are always on the lookout for exceptional talent who share our passion
+            for innovation and want to help shape the future of enterprise AI.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
             <Button variant="hero" size="xl">
-              Carriere in ITAsociety
+              Careers at ITAsociety
             </Button>
             <Button variant="enterprise" size="xl">
-              Diventa Partner
+              Become a Partner
             </Button>
           </div>
         </div>

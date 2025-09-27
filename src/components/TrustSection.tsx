@@ -14,7 +14,7 @@ import {
 const certifications = [
   {
     name: "ISO 27001",
-    description: "Sicurezza Informazioni",
+    description: "Information Security",
     icon: Shield,
     color: "from-ita-red to-ita-red-light"
   },
@@ -52,25 +52,25 @@ const metrics = [
     icon: Users,
     value: "500+",
     label: "Enterprise Clients",
-    description: "Aziende che si fidano di noi"
+    description: "Companies that trust us"
   },
   {
     icon: TrendingUp,
     value: "400%",
-    label: "ROI Medio",
-    description: "Incremento performance documentato"
+    label: "Average ROI",
+    description: "Documented performance increase"
   },
   {
     icon: Building,
     value: "15+",
-    label: "Settori Industriali",
-    description: "Expertise diversificata"
+    label: "Industries Served",
+    description: "Diverse expertise"
   },
   {
     icon: Globe,
     value: "25+",
-    label: "Paesi Serviti",
-    description: "Presenza globale"
+    label: "Countries Served",
+    description: "Global presence"
   }
 ];
 
@@ -81,14 +81,14 @@ export const TrustSection = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4 border-primary/30 text-primary">
-            Fiducia & Eccellenza
+            Trust & Excellence
           </Badge>
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
-            Partner di Fiducia per i Leader di Mercato
+            Trusted Partner for Market Leaders
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Le aziende più innovative del mondo si affidano a ITAsociety per trasformare 
-            i loro processi attraverso soluzioni AI sicure e certificate.
+            The world's most innovative companies rely on ITAsociety to transform
+            their processes through secure and certified AI solutions.
           </p>
         </div>
 
@@ -111,7 +111,7 @@ export const TrustSection = () => {
         {/* Certifications */}
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-foreground text-center mb-8">
-            Certificazioni e Compliance
+            Certifications and Compliance
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {certifications.map((cert, index) => (
@@ -137,9 +137,9 @@ export const TrustSection = () => {
               ))}
             </div>
             <blockquote className="text-xl sm:text-2xl font-medium text-foreground mb-6 italic">
-              "ITAsociety ha trasformato completamente i nostri processi produttivi. 
-              L'implementazione dell'AI ha ridotto i tempi di 60% e incrementato la qualità del 40%. 
-              Un partner tecnologico davvero strategico."
+              "ITAsociety has completely transformed our production processes.
+              The implementation of AI has reduced times by 60% and increased quality by 40%.
+              A truly strategic technology partner."
             </blockquote>
             <div className="text-foreground/80">
               <div className="font-semibold">Marco Benedetti</div>
@@ -151,7 +151,7 @@ export const TrustSection = () => {
         {/* Client Sectors */}
         <div className="mt-16">
           <h3 className="text-xl font-semibold text-foreground text-center mb-8">
-            Settori di Eccellenza
+            Industries Served
           </h3>
           <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
             {clientLogos.map((client, index) => (

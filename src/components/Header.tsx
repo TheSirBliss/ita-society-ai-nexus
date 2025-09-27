@@ -1,16 +1,17 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Zap, Brain, Shield, Rocket } from "lucide-react";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigationItems = [
-    { name: "Sviluppo AI", href: "#ai-development", icon: Brain },
-    { name: "Sicurezza", href: "#security", icon: Shield },
+    { name: "AI Development", href: "#ai-development", icon: Brain },
+    { name: "Security", href: "#security", icon: Shield },
     { name: "Business", href: "#business", icon: Zap },
-    { name: "Innovazioni", href: "#innovations", icon: Rocket },
-    { name: "Chi Siamo", href: "#about", icon: null },
+    { name: "Innovations", href: "#innovations", icon: Rocket },
+    { name: "About Us", href: "#about", icon: null },
   ];
 
   return (
@@ -41,14 +42,22 @@ export const Header = () => {
           </div>
 
           {/* CTA Buttons */}
-          <div className="hidden md:flex items-center space-x-4">
-            <Button variant="enterprise" size="sm">
-              Contattaci
-            </Button>
-            <Button variant="hero" size="sm">
-              Richiedi Demo
-            </Button>
-          </div>
+          <Button
+            variant="enterprise"
+            size="sm"
+            aria-label="Contact the ITAsociety team"
+            onClick={() => window.location.href = "/#contatti"}
+          >
+            Contact Us
+          </Button>
+          <Button
+            variant="hero"
+            size="sm"
+            aria-label="Request a personalized demo"
+            onClick={() => window.location.href = "/#demo"}
+          >
+            Request a Demo
+          </Button>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">
@@ -78,17 +87,28 @@ export const Header = () => {
                 </a>
               ))}
               <div className="flex flex-col space-y-2 pt-4">
-                <Button variant="enterprise" size="sm">
-                  Contattaci
-                </Button>
-                <Button variant="hero" size="sm">
-                  Richiedi Demo
-                </Button>
+                <Button
+                  variant="enterprise"
+                  size="sm"
+                  aria-label="Contact the ITAsociety team"
+                  onClick={() => window.location.href = "/#contatti"}
+                >
+            Contact Us
+          </Button>
+          <Button
+            variant="hero"
+            size="sm"
+            aria-label="Request a personalized demo"
+            onClick={() => window.location.href = "/#demo"}
+          >
+            Request a Demo
+          </Button>
               </div>
             </div>
           </div>
         )}
       </nav>
+      <LanguageSwitcher />
     </header>
   );
 };

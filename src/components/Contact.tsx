@@ -20,36 +20,36 @@ import {
 const contactMethods = [
   {
     icon: Phone,
-    title: "Chiamata Strategica",
-    description: "Consulenza immediata con i nostri esperti",
-    action: "+39 02 8888 9999",
+    title: "Strategic Call",
+    description: "Immediate consultation with our experts",
+    action: "+39 320 574 2205",
     color: "from-ita-green to-quantum-teal"
   },
   {
     icon: Mail,
     title: "Email Enterprise",
-    description: "Risposta garantita entro 4 ore lavorative",
+    description: "Guaranteed response within 4 business hours",
     action: "hello@itasociety.ai",
     color: "from-cyber-blue to-neural-purple"
   },
   {
     icon: MapPin,
-    title: "Visita i Nostri Uffici",
-    description: "Innovation Hub Milano, Via Innovation 42",
-    action: "Prenota visita",
+    title: "Visit Our Offices",
+    description: "Nichelino, Via Innovation 42",
+    action: "Book a visit",
     color: "from-ita-red to-ita-red-light"
   },
   {
     icon: MessageCircle,
     title: "Chat AI Assistant",
     description: "Supporto istantaneo 24/7 con AI",
-    action: "Avvia chat",
+    action: "Start chat",
     color: "from-neural-purple to-ita-green"
   }
 ];
 
 const serviceTypes = [
-  "Consulenza AI Strategy",
+  "AI Strategy Consulting",
   "Implementazione Soluzioni",
   "Partnership Tecnologica",
   "Training & Formazione",
@@ -75,7 +75,7 @@ export const Contact = () => {
     // Simulate form submission
     toast({
       title: "Richiesta Inviata con Successo!",
-      description: "Il nostro team ti contatterà entro 2 ore lavorative per una consulenza personalizzata.",
+      description: "Our team will contact you within 2 working hours for a personalized consultation.",
     });
 
     // Reset form
@@ -100,14 +100,14 @@ export const Contact = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4 border-primary/30 text-primary">
-            Contatti Enterprise
+            Enterprise Contacts
           </Badge>
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
-            Inizia la Tua Trasformazione Digitale
+            Start Your Digital Transformation
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Parla con i nostri esperti AI per scoprire come ITAsociety può accelerare 
-            l'innovazione nella tua azienda con soluzioni su misura.
+            Talk to our AI experts to discover how ITAsociety can accelerate
+            innovation in your company with tailored solutions.
           </p>
         </div>
 
@@ -115,7 +115,7 @@ export const Contact = () => {
           {/* Contact Methods */}
           <div className="lg:col-span-1">
             <h3 className="text-2xl font-bold text-foreground mb-8">
-              Modalità di Contatto
+              Contact Methods
             </h3>
             <div className="space-y-6">
               {contactMethods.map((method, index) => (
@@ -141,21 +141,23 @@ export const Contact = () => {
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2 text-foreground">
                   <Clock className="w-5 h-5" />
-                  <span>Orari di Supporto</span>
+                  <span>Support Hours</span>
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-2 text-foreground/80">
                   <div className="flex justify-between">
-                    <span>Lun - Ven:</span>
+                    <span>Mon - Fri:</span>
                     <span className="font-medium">09:00 - 18:00</span>
+                    <span className="font-medium">09:00 AM - 06:00 PM</span>
                   </div>
                   <div className="flex justify-between">
-                    <span>Sabato:</span>
+                    <span>Saturday:</span>
                     <span className="font-medium">10:00 - 14:00</span>
+                    <span className="font-medium">10:00 AM - 02:00 PM</span>
                   </div>
                   <div className="flex justify-between">
-                    <span>Emergenze:</span>
+                    <span>Emergencies:</span>
                     <span className="font-medium text-ita-green">24/7</span>
                   </div>
                 </div>
@@ -169,10 +171,10 @@ export const Contact = () => {
               <CardHeader>
                 <CardTitle className="text-2xl font-bold text-foreground flex items-center space-x-2">
                   <Send className="w-6 h-6 text-primary" />
-                  <span>Richiedi Consulenza Gratuita</span>
+                  <span>Request a Free Consultation</span>
                 </CardTitle>
                 <p className="text-muted-foreground">
-                  Compila il form per ricevere una valutazione personalizzata delle tue esigenze AI.
+                  Fill out the form to receive a personalized assessment of your AI needs.
                 </p>
               </CardHeader>
               <CardContent>
@@ -180,19 +182,19 @@ export const Contact = () => {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">
-                        Nome Completo *
+                        Full Name *
                       </label>
                       <Input
                         value={formData.name}
                         onChange={(e) => handleInputChange("name", e.target.value)}
-                        placeholder="Il tuo nome"
+                        placeholder="Your Name"
                         required
                         className="bg-background/50 border-border/50 focus:border-primary"
                       />
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">
-                        Email Aziendale *
+                        Company Email *
                       </label>
                       <Input
                         type="email"
@@ -208,19 +210,19 @@ export const Contact = () => {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">
-                        Azienda *
+                        Company *
                       </label>
                       <Input
                         value={formData.company}
                         onChange={(e) => handleInputChange("company", e.target.value)}
-                        placeholder="Nome azienda"
+                        placeholder="Company Name"
                         required
                         className="bg-background/50 border-border/50 focus:border-primary"
                       />
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">
-                        Ruolo
+                        Role
                       </label>
                       <Input
                         value={formData.role}
@@ -233,14 +235,14 @@ export const Contact = () => {
 
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-2">
-                      Servizio di Interesse
+                      Service of Interest
                     </label>
                     <select
                       value={formData.service}
                       onChange={(e) => handleInputChange("service", e.target.value)}
                       className="w-full px-3 py-2 bg-background/50 border border-border/50 rounded-md text-foreground focus:border-primary focus:outline-none"
                     >
-                      <option value="">Seleziona un servizio</option>
+                      <option value="">Select a service</option>
                       {serviceTypes.map((service) => (
                         <option key={service} value={service}>{service}</option>
                       ))}
@@ -249,14 +251,14 @@ export const Contact = () => {
 
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-2">
-                      Budget Indicativo
+                      Indicative Budget
                     </label>
                     <select
                       value={formData.budget}
                       onChange={(e) => handleInputChange("budget", e.target.value)}
                       className="w-full px-3 py-2 bg-background/50 border border-border/50 rounded-md text-foreground focus:border-primary focus:outline-none"
                     >
-                      <option value="">Seleziona range</option>
+                      <option value="">Select a range</option>
                       <option value="10k-50k">€10k - €50k</option>
                       <option value="50k-100k">€50k - €100k</option>
                       <option value="100k-500k">€100k - €500k</option>
@@ -266,12 +268,12 @@ export const Contact = () => {
 
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-2">
-                      Descrivi il tuo Progetto *
+                      Describe your project *
                     </label>
                     <Textarea
                       value={formData.message}
                       onChange={(e) => handleInputChange("message", e.target.value)}
-                      placeholder="Raccontaci della tua azienda, sfide attuali e obiettivi. Più dettagli fornisci, più precisa sarà la nostra consulenza."
+                      placeholder="Tell us about your company, current challenges, and goals. The more details you provide, the more accurate our consultation will be."
                       rows={4}
                       required
                       className="bg-background/50 border-border/50 focus:border-primary"
@@ -281,11 +283,11 @@ export const Contact = () => {
                   <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                     <Button type="submit" variant="hero" size="lg" className="flex-1 group">
                       <Send className="w-5 h-5 mr-2 group-hover:translate-x-1 transition-transform duration-300" />
-                      Invia Richiesta
+                      Submit Request
                     </Button>
                     <Button type="button" variant="enterprise" size="lg" className="flex items-center space-x-2">
                       <Calendar className="w-5 h-5" />
-                      <span>Prenota Call</span>
+                      <span>Book Call</span>
                     </Button>
                   </div>
                 </form>
@@ -301,8 +303,8 @@ export const Contact = () => {
               <Zap className="w-5 h-5 text-foreground" />
             </div>
             <div className="text-foreground">
-              <div className="font-semibold">Risposta Garantita in 2 Ore</div>
-              <div className="text-sm opacity-80">I nostri esperti AI ti contatteranno rapidamente</div>
+              <div className="font-semibold">Guaranteed Response in 2 Hours</div>
+              <div className="text-sm opacity-80">Our AI experts will contact you promptly</div>
             </div>
           </div>
         </div>

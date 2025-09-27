@@ -7,7 +7,10 @@ import tseslint from "typescript-eslint";
 export default tseslint.config(
   { ignores: ["dist"] },
   {
-    extends: [js.configs.recommended, ...tseslint.configs.recommended],
+    extends: [js.configs.recommended, ...tseslint.configs.recommended, "eslint:recommended",
+  "plugin:react/recommended",
+  "plugin:@typescript-eslint/recommended",
+  "plugin:jsx-a11y/recommended"],
     files: ["**/*.{ts,tsx}"],
     languageOptions: {
       ecmaVersion: 2020,
@@ -22,8 +25,10 @@ export default tseslint.config(
       "react-refresh/only-export-components": [
         "warn",
         { allowConstantExport: true },
-      ],
-      "@typescript-eslint/no-unused-vars": "off",
+      ], 
+      "@typescript-eslint/no-unused-vars": "off", "react/prop-types": "off",
+  "@typescript-eslint/no-unused-vars": "error",
+  "jsx-a11y/anchor-is-valid": "warn" 
     },
   }
 );
