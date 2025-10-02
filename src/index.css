@@ -133,3 +133,101 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+/* Stile per le Pagine di Servizio */
+.service-detail-header {
+    background: #003366; /* Un blu scuro elegante */
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.service-detail-header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.service-detail-header .lead {
+    font-size: 1.4em;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+.service-detail-content {
+    padding: 60px 0;
+}
+
+.service-detail-content h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.feature i {
+    font-size: 3em;
+    color: #0056b3; /* Blu primario */
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.process-steps {
+    list-style: none;
+    padding-left: 0;
+    max-width: 700px;
+    margin: 0 auto 60px auto;
+}
+
+.process-steps li {
+    background: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-left: 5px solid #0056b3;
+    font-size: 1.1em;
+    transition: transform 0.2s;
+}
+
+.process-steps li:hover {
+    transform: translateX(5px);
+}
+
+.cta-section {
+    text-align: center;
+    background: #f4f4f4;
+    padding: 50px;
+    border-radius: 8px;
+}
+
+.cta-section h2 {
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #ff6600; /* Un arancione che cattura l'attenzione */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e65c00;
+}
